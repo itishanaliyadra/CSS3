@@ -1,0 +1,493 @@
+/* --------------------------------DEFAULT CSS---------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Anybody';
+}
+.smoothscoll {
+    padding: 20px 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: rgb(61, 135, 61);
+    font-size: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+}
+.container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.d-flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.aling-items {
+    align-items: center;
+}
+.services-title{
+    padding-top: 8%;
+}
+.services-title h6 {
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--color-green);
+}
+.services-title h2 {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--color-black);
+    font-family: var(--font-family);
+    margin-bottom: 4%;
+}
+/* ----------------------------VARIABLE----------------------------*/
+:root {
+    --primary-color: #010507;
+    --color-white: #fff;
+    --color-green: #39b54a;
+    --color-black: #000000;
+}
+/*---------------------------- HEADER ----------------------------*/
+header {
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.fixed .container{
+    max-width: 1440px;
+}
+header.fixed{
+    padding: 10px 0;
+    background-color: #39b54a;
+}
+header .container{
+    transition: all 0.5s;
+}
+.logo a {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+.logo a span {
+    color: var(--color-green);
+}
+nav ul li a {
+    padding-left: 20px;
+    font-size: 20px;
+    color: var(--color-white);
+}
+/* ----------------------------Banner---------------------------- */
+.bg-banner {
+    background-image: url("../image/asset\ 0.jpeg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner-contan h1 {
+    font-size: 63PX;
+    line-height: 84PX;
+    color: var(--color-white);
+    font-weight: 700;
+}
+.banner-btn a button {
+    padding: 15px 30px;
+    margin-top: 10%;
+    margin-left: 20px;
+    color: var(--color-white);
+    border: 3px solid var(--color-white);
+    background-color: transparent;
+    transition: 1s;
+}
+.banner-btn a button:hover {
+    background-color: var(--color-white);
+    color: var(--primary-color);
+}
+.banner-contan p{
+    line-height: 20px;
+    color: var(--color-white);
+}
+.banner-contan {
+    position: absolute; 
+    top: 22%;
+}
+/* ---------------------------- FEATURES ----------------------------  */
+.features {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-green);
+    padding-top: 8%;
+    position: relative;
+    padding-bottom: 49%;
+}
+.features-title h6 {
+    font-size: 17px;
+    line-height: 27px;
+    color: var(--color-black);
+    font-weight: 600;
+}
+.features-title h2 {
+    font-size: 78px;
+    line-height: 97px;
+    color: var(--color-white);
+    font-weight: 700;
+    margin-bottom: 55px;
+}
+.features-title {
+    text-align: center;
+}
+.features-title::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.24);
+    height: 1px;
+    width: 550px;
+    bottom: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features-contan p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 42px;
+    color: var(--color-black);
+    font-weight: 400;
+    color: #010507;
+    margin-bottom: 6%;
+}
+.f-features {
+    width: 25%;
+    border-right: 1px solid rgba(255, 255, 255, 0.415);
+}
+.fcontan {
+    margin: 30px;
+    text-align: center;
+    position: relative;
+}
+.f-title h3 {
+    font-size: 84px;
+    line-height: 84px;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+.f-contan p {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-black);
+    font-weight: 700;
+}
+/* ---------------------------- SERVICES ---------------------------- */
+.services-title {
+    text-align: center;
+    padding-bottom: 41px;
+}
+.services {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 20px;
+}
+.service-icon i {
+    font-size: 48px;
+    color: var(--color-green);
+    margin: 15px 25px;
+}
+.services-contan h2 {
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.services-contan p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #757575;
+    padding-bottom: 48px;
+}
+/* ---------------------------- WORkS ---------------------------- */
+.works-box {
+    width: 100%;
+    height: 450px;
+    background-color: #100f0ff3;
+    position: relative;
+}
+.works-contan{
+    text-align: center;
+}
+.works-contan h2::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.203);
+    height: 1px;
+    width: 550px;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.works-contan h2{
+    color: var(--color-white);
+}   
+.work-img{
+    padding-bottom: 10%;
+    column-count: 2;
+    column-gap: 0;
+}
+.works-img1{
+    position: relative;
+}
+.works-img1 img{
+    width: 100%;
+    display: block;
+}
+.w-contan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: var(--color-white);
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+.works-img1:hover .w-contan{
+    opacity: 1;
+}
+.w-contan h3{
+    font-size: 20px;
+    padding: 20px 10px 0 0;
+}
+.w-contan p{
+    font-size: 17px;
+}
+.w-contan i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+    font-size: 35px;
+}
+/* <!------------------------CLIENTS ----------------------> */
+.clients-box{
+    width: 100%;
+    background-color: #e6e6e6;
+    padding-bottom: 10%;
+}
+.clients-img{
+    margin: auto;
+}
+.clients-img img{
+    width: 120px;
+    opacity: 0.5;
+    transition: 1s;
+}
+.clients-img img:hover{
+    opacity: 1;
+}
+.clients{
+    width:700px;
+    margin: auto;
+}
+.clients p{
+    font-size: 30px;
+    line-height: 54px;
+    text-align:center;
+    color: #555555;
+    padding-top: 60px;
+    position: relative;
+}
+.clients p::before{ 
+    content: "";
+    position: absolute;
+    background-color: rgba(4, 4, 4, 0.203);
+    height: 1px;
+    width: 550px;
+    top: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.clients .images{
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    clip-path: circle(50%);
+}
+.clients .images img{
+    width: 100%;
+}
+.images-text{
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+}
+.images-text h6{
+    color: #555555;
+}
+/* <!------------------------CONTACT ----------------------> */
+.contact-img{
+    width: 100%;
+    background-image: url("../image/asset\ 21.webp");
+    position: relative;
+    padding-bottom: 10%;
+}
+.contact-img::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 1px;
+    background-color: var(--color-green);
+    top: -81px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.contact-title h2{
+    color: var(--color-white);
+}
+.contact-from{
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-white);
+    padding: 10px 50px;  
+    margin-top: 59px;
+}
+.contact-from h5{
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 50px;
+}
+.contact-from input{
+    outline: none;
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 40px 0;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid rgba(213, 206, 206, 0.365);
+    transition: 1px;
+}
+.contact-from input:hover{
+    border-bottom: 1px solid var(--color-green);
+}
+.contact-from textarea{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: var(--color-white);
+    border-bottom: 1px solid rgba(213, 206, 206, 0.365);
+}
+.contact-from textarea:hover{
+    border-bottom: 1px solid var(--color-green);
+}
+.contact-from .btn-from{
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 50px;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    transition: 1s;
+}
+.contact-from1{
+    margin-top: 59px;
+    width: 500px;
+    height: 740px;
+    background-color: #000000;
+    color: var(--color-white);
+    padding: 50px;
+}
+.contact-from1 h4{
+    line-height: 18px;
+    padding-bottom: 50px; 
+}
+.contact-from1 h5{
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--color-green);
+    padding-bottom: 10%;
+}
+.contact-from1 p{
+    font-size: 15px;
+    line-height: 30px;
+    color:#e0d8d8c4;
+    padding-bottom: 50px;
+}
+.contact-info1 i{
+    color: var(--color-white);
+    padding-left: 15px;
+    font-size: 20px;
+}
+/* <!------------------------Footer ----------------------> */
+.footer{
+    width: 100%;
+    height: 450px;
+    background-color: var(--color-black);
+}
+.footer-notified{
+    width: 100%;
+}
+.footer-title{
+    width: 50%;
+}
+.footer-title h2{
+    padding-top: 10%;
+    font-size: 30px;
+    color:var(--color-green);
+}
+.footer-title p{
+    font-size: 17px;
+    padding-top: 35px;
+    line-height: 30px;
+    color: rgba(235, 225, 225, 0.377);
+}
+.footer-title .email{
+    padding-top: 10%;
+}
+.footer-title .email i{
+    color: #ffff;
+    background-color: #000;
+    font-size: 30px;
+    padding: 10px;
+}
+.footer-title .email input{
+    border: none;
+    background-color: var(--color-black);
+    color: #fff;
+}
+.footer-title .email button{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 0px 20px;
+}
+.footer h6{
+    color: rgba(183, 167, 167, 0.621);
+    font-size: 15px;
+    text-align: center;
+    padding-top: 78px;
+}
+.footer h6 span{
+    color: var(--color-white);
+}
